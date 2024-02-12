@@ -3,12 +3,9 @@ html {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-
+    /* text-align: center; */
     background-color: brown;
-
 }
-
 
 .testo-barrato {
     text-decoration: line-through;
@@ -18,16 +15,11 @@ html {
     text-decoration: none;
 }
 
-
 #riga-input {
     width: 100%;
     margin: 0;
     border: 1px solid black;
-
-    
-    
 }
-
 
 .container {
     background-color: white;
@@ -40,11 +32,9 @@ html {
     width: 70%;
     padding: 1rem;
     border-radius: 5px;
-    
-
 }
 
-.container button {    
+.container button {
     width: 20%;
     background-color: rgb(33, 94, 206);
     border-width: 0;
@@ -55,18 +45,44 @@ html {
 }
 
 .container ul {
-    list-style-type: none;
-    width: 100%;
     padding: 0;
     margin: 0;
+}
+
+.container ul div {
+    padding: 0;
+    margin: 10px 0;
+    
+    border-radius: 5px;
+    height: 3rem;
+    background-color: gainsboro;
+    border: solid 1px rgb(175, 175, 175);
+}
+
+.container ul li {
+    display: inline-block;
+    border-radius: 5px;
+    width: 80%;
+    /* border: solid 1px red; */
+    margin-left: 10px;
 
 }
 
-.container li {
-    margin: 0;
-    text-align: left;
+/* cestino */
+.container ul div i {
+    display: inline-block;
+    text-align: right;
+    background-color: red;
+    color: white;
     padding: 1rem;
-    border: solid 1px red;
+    font-size: 1rem;
     border-radius: 5px;
-    margin: 0.3rem 0;
+}
+
+p {
+    display: inline-block;
+    text-align: right;
+    /* border: 1px solid orangered; */
+    width: 15%;
+    margin: auto 0;
 }

@@ -13,14 +13,24 @@ let elencoTaskEseguiti = [];
 
 function visualizzaTask() {
 
+    console.log(elencoTask);
+    console.log(elencoTaskEseguiti);
+
+
     lista.innerHTML = '';
     elencoTask.forEach((element, index) => {
 
         //task eseguito: font barrato
         if (elencoTaskEseguiti[index]) {
-            lista.innerHTML += `<li class="testo-barrato" onclick="barraTask(${index});" >${element} <i onclick="eliminaTask(event, ${index});"  class="fa-solid fa-trash-can"></i></li>`;
+            lista.innerHTML += `<div>
+                                    <li class="testo-barrato" onclick="barraTask(${index});" >${element}</li>
+                                    <p><i onclick="eliminaTask(${index});"class="fa-solid fa-trash-can"></i></p>
+                                </div>`;
         } else {
-            lista.innerHTML += `<li class="testo-normale" onclick="barraTask(${index});" >${element} <i onclick="eliminaTask(event, ${index});"  class="fa-solid fa-trash-can"></i></li>`;
+            lista.innerHTML += `<div>
+                                    <li class="testo-normale" onclick="barraTask(${index});" >${element}</li>
+                                    <p><i onclick="eliminaTask(${index});"class="fa-solid fa-trash-can"></i></p>
+                                </div>`;
         }
     });
 }
